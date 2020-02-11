@@ -1,0 +1,13 @@
+package com.vertual.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class VertualApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(VertualApiApplication.class, args);
+	}
+
+}

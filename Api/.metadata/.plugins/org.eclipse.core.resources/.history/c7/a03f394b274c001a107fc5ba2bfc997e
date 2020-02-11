@@ -1,0 +1,5 @@
+echo "start building application"
+curl -X POST localhost:8055/actuator/shutdown
+docker exec api mvn clean package
+echo "building package"
+docker exec -d api java -jar ./target/egoz-0.0.1-SNAPSHOT.jar 
